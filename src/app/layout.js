@@ -1,4 +1,7 @@
-import '@/app/styles/global.scss'
+import '@styles/global.scss'
+import Navigation from '@components/Navigation'
+import Providers from './provider'
+
 export const metadata = {
   title: "Next Js Tutorial",
   description: "This is a next js tutorial",
@@ -14,7 +17,10 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body>
+        <Navigation/>
+        <Providers>
         {children}
+        </Providers>
       </body>
     </html>
   );

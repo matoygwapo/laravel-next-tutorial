@@ -1,4 +1,4 @@
-import '@/app/styles/product.scss'
+import '@styles/product.scss'
 import Link from 'next/link'
 export default async function Product({params}){
     const {id} = await params
